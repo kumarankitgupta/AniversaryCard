@@ -135,7 +135,7 @@ function App() {
       </div>
 
       <div className="header_message">
-        <div>Venue</div>
+        <div>Venue:</div>
       </div>
 
       <div className="header_message" style={{ flexDirection: "column" }}>
