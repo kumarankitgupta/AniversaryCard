@@ -142,7 +142,7 @@ function App() {
         <div>
           <p>JB Mall, MG Rd, Gurunanak Chowk</p>
         </div>
-        <p>Moudhapara, Raipur, Chhattisgarh, 492001</p>
+        <p>Moudhapara, Raipur, Chhattisgarh, 492002</p>
       </div>
       <br></br>
       <div className="header_message">
