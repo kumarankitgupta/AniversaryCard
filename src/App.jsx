@@ -4,6 +4,7 @@ import heartImage from "../public/heart.png";
 import celebAudio from "../public/nakuch.mp3";
 import borderUp from "../public/borderup.png";
 import borderDown from "../public/borderdo.png";
+import hand from "../public/hand.gif";
 import "./App.css";
 
 function App() {
@@ -64,7 +65,22 @@ function App() {
           </b>
         </div>
       </div>
-      <div className="heart_image" onClick={() => handlePlayAudio()}>
+      <div
+        className="heart_image"
+        onClick={() => handlePlayAudio()}
+        style={{ position: "relative" }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            bottom: "-18%",
+            right: "39%",
+            zIndex: "1",
+          }}
+          onClick={() => handlePlayAudio()}
+        >
+          <img src={hand} width="80px" />
+        </div>
         <img
           src={heartImage}
           style={{ width: "70%" }}
@@ -73,88 +89,75 @@ function App() {
         />
       </div>
       <audio ref={audioRef} src={celebAudio} id="audioId" />
-
-      <div className="header_message">
+      <div className="header_message" style={{ marginTop: "13%" }}>
         <div>Dear Family, and Friends☺️</div>
       </div>
-
       <div className="header_message">
         <div>🎉 Join Us to Celebrate 50 Years of Love! 🎉</div>
       </div>
-
       <br></br>
       <div className="header_message">
         <div>We are excited to invite you to celebrate</div>
       </div>
-
       <div className="header_message">
         <div>the 50th wedding anniversary of our</div>
       </div>
-
       <div className="header_message">
         <div>wonderful parents, </div>
       </div>
-
       <div className="header_message">
         <div>Ashok Sah and Radha Devi! 💖</div>
       </div>
       <div className="header_message">
         <div>Their journey together has been full of love,</div>
       </div>
-
       <div className="header_message">
         <div>and we want to celebrate this special day</div>
       </div>
-
       <div className="header_message">
         <div>with you all. 🥳</div>
       </div>
-
       <br></br>
-
       <div className="header_message">
         <div>So, Come raise a toast to their</div>
       </div>
-
       <div className="header_message">
         <div>beautiful love story and make, this</div>
       </div>
-
       <div className="header_message">
         <div> milestone unforgettable! 🥂🌹</div>
       </div>
-
       <br></br>
       <br></br>
-
       <div className="header_message">
         <div>📅 Date: 28/06/2024</div>
       </div>
       <div className="header_message">
         <div>🕰️Time: 7:30 PM onwards</div>
       </div>
-
-      <div className="header_message">
+      <div className="header_message" style={{ marginBottom: "20px" }}>
         <div>Venue:</div>
       </div>
-
       <div className="header_message" style={{ flexDirection: "column" }}>
         <div>
-          <p>JB Mall, MG Rd, Gurunanak Chowk</p>
+          <b>The Real Combo Restaurant</b>
         </div>
-        <p>Moudhapara, Raipur, Chhattisgarh, 492002</p>
+        <div>
+          <p>Opp. Magneto Mall, Beside Nissan & Datsun</p>
+        </div>
+        <p>Car Showroom, 36 Mall Service Road</p>
+        <p>Raipur Chhatisgarh</p>
       </div>
+      <br></br>
       <br></br>
       <div className="header_message">
         <div>Thank you☺️</div>
       </div>
-
       <div className="border_image">
         <img src={borderDown} style={{ width: "100%" }} height={"100px"} />
       </div>
-
       <div className="header_message">
-        <div>Designed with ❤️ by Ankit and Shalu</div>
+        <div>Developed with ❤️ by Ankit and Shalu</div>
       </div>
     </>
   );
