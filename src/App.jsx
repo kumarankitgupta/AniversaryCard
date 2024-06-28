@@ -146,7 +146,7 @@ function App() {
           <p>Opp. Magneto Mall, Beside Nissan & Datsun</p>
         </div>
         <p>Car Showroom, 36 Mall Service Road</p>
-        <p>Raipur Chhatisgarh</p>
+        <p>Raipur Chhattisgarh</p>
       </div>
       <br></br>
       <br></br>
